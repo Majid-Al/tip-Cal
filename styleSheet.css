@@ -1,0 +1,69 @@
+* {
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: hsl(185, 41%, 84%) !important;
+}
+input {
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  padding: 5px;
+}
+::placeholder {
+  font-weight: 700;
+}
+.bigerDiv {
+  background-color: transparent;
+}
+.logoDiv {
+  background-color: transparent;
+  margin-bottom: 4%;
+  margin-top: 5%;
+}
+
+.bigBox {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin-top: 0px;
+  padding: 20px;
+}
+.row {
+  margin-left: 0px !important;
+}
+.leftBox {
+  padding-left: 0% !important;
+}
+#billInput {
+  background: url(images/icon-dollar.svg) no-repeat left center;
+  background-color: hsl(189, 41%, 97%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.leftSecond {
+  justify-content: center;
+  padding-left: 0px;
+}
+button {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+#perInput {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+#pNumInput {
+  background: url(images/icon-person.svg) no-repeat left center;
+  background-color: hsl(189, 41%, 97%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.rightBox {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1rem;
+}

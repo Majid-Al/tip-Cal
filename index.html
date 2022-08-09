@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      href="https://fonts.google.com/specimen/Space+Mono"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link href="styleSheet.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="">
+    <div class="bigerDiv align-items-center justify-content-center">
+      <div class="logoDiv text-center container">
+        <img src="images/logo.svg" width="80px" />
+      </div>
+      <div class="bigBox col-5 container">
+        <div class="row container">
+          <div class="leftBox col-6">
+            <div class="leftFirst" >
+              
+              Bill </br>
+              <input id="billInput" type="" /> 
+            </div>
+            <div class="leftSecond">
+              Select Tip % </br>
+              <div class=" text-left gap-3 col-12">
+                <button class=" col-5 col-md-3">  5%</button>
+                <button class=" col-5 col-md-3">10%</button>
+                <button class=" col-5 col-md-3">15%</button>
+              
+                <button class=" col-5 col-md-3">25%</button>
+                <button class=" col-5 col-md-3">50%</button>
+                <input id="perInput" type="" class=" col-5 col-md-3" placeholder="Custom " />
+              </div>
+            </div>
+            <div class="leftThird" >  Number of People </br>
+              <input id="pNumInput" type="">
+            </div>
+          </div>
+          <div class="rightBox col-6">
+            <div class="rightfirst">Tip Amount / person</div>
+            <div class="rightSecond">Total / person Reset</div>
+            <div class="rightThird"></div>
+          </div>
+        </div>
+      </div>
+      Custom
+    </div>
+  </body>
+  <script src="javaScript.js"></script>
 </html>
