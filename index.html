@@ -32,35 +32,36 @@
       <div class="bigBox col-5 container">
         <div class="row container">
           <div class="leftBox col-6">
-            <div class="leftFirst" >
+            <div class="leftFirst sector" >
               
-              Bill </br>
-              <input id="billInput" type="" /> 
+              <span class="textTitle" > Bill  </span></br>
+              <input id="billInput" type="number" /> 
             </div>
-            <div class="leftSecond">
-              Select Tip % </br>
-              <div class=" text-left gap-3 col-12">
+            <div class="leftSecond sector">
+              <span class="textTitle" >  Select Tip % </span> </br>
+              <div class=" text-left col-12">
                 <button class=" col-5 col-md-3">  5%</button>
                 <button class=" col-5 col-md-3">10%</button>
                 <button class=" col-5 col-md-3">15%</button>
               
                 <button class=" col-5 col-md-3">25%</button>
                 <button class=" col-5 col-md-3">50%</button>
-                <input id="perInput" type="" class=" col-5 col-md-3" placeholder="Custom " />
+                <input id="perInput" type="number" class=" col-5 col-md-3" placeholder="Custom " />
               </div>
             </div>
-            <div class="leftThird" >  Number of People </br>
-              <input id="pNumInput" type="">
+            <div class="leftThird sector" > <span class="textTitle" > Number of People</span></br>
+              <input id="pNumInput" type="number">
             </div>
           </div>
           <div class="rightBox col-6">
-            <div class="rightfirst">Tip Amount / person</div>
-            <div class="rightSecond">Total / person Reset</div>
-            <div class="rightThird"></div>
+            <ul class="rightFirst col-12"><li class="col-5"> Tip Amount </br><span class="secondLines">/ person</span> </li>
+               <li class="firstShow col-5"> $0.00 </li> </ul>
+            <ul class="rightSecond col-12"><li class="col-5"> Total </br><span class="secondLines">/ person </span ></li>
+              <li class="secondShow col-5"> $0.00 </li> </ul>
+            <div class="rightThird col-12"> <button id="reset">Reset</button>  </div>
           </div>
         </div>
       </div>
-      Custom
     </div>
   </body>
   <script src="javaScript.js"></script>

@@ -4,6 +4,12 @@
 body {
   background-color: hsl(185, 41%, 84%) !important;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 input {
   font-family: "Space Mono", monospace;
   text-align: right;
@@ -14,7 +20,15 @@ input {
 }
 ::placeholder {
   font-weight: 700;
+  font-size: 15px;
 }
+button,
+#pNumInput,
+#perInput,
+#billInput {
+  border-radius: 5px !important;
+}
+
 .bigerDiv {
   background-color: transparent;
 }
@@ -26,8 +40,10 @@ input {
 
 .bigBox {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 1rem;
+  height: 320px;
+  width: 600px !important;
   margin-top: 0px;
   padding: 20px;
 }
@@ -37,25 +53,51 @@ input {
 .leftBox {
   padding-left: 0% !important;
 }
+
+.textTitle {
+  color: hsl(185, 25%, 34%);
+  font-weight: 700;
+  font-size: small;
+}
 #billInput {
   background: url(images/icon-dollar.svg) no-repeat left center;
   background-color: hsl(189, 41%, 97%);
   font-family: "Space Mono", monospace;
   font-weight: 700;
 }
+.leftFirst {
+  margin-bottom: 20px;
+}
 
 .leftSecond {
   justify-content: center;
   padding-left: 0px;
+  margin-bottom: 20px;
+  height: 100px;
 }
 button {
-  color: white;
+  color: rgba(255, 255, 255, 0.884);
   background-color: hsl(183, 100%, 15%);
   font-weight: 700;
+  border: 0px;
+  height: 35px;
 }
+button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
 #perInput {
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  height: 36px;
+  margin-top: 6px;
+}
+#perInput:hover,
+#pNumInput:hover,
+#billInput:hover {
+  border: 2px solid hsl(185, 41%, 84%);
+  cursor: pointer;
 }
 #pNumInput {
   background: url(images/icon-person.svg) no-repeat left center;
@@ -64,6 +106,45 @@ button {
   font-weight: 700;
 }
 .rightBox {
+  color: white;
   background-color: hsl(183, 100%, 15%);
   border-radius: 1rem;
+}
+ul {
+  margin: 0px !important;
+}
+li {
+  display: inline-block;
+  font-size: small;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+li:nth-child(2) {
+  float: right;
+  height: max-content;
+  font-size: xx-large;
+}
+.rightFirst {
+  padding: 5px;
+}
+.rightSecond {
+  padding: 5px;
+}
+.secondLines {
+  color: rgba(255, 255, 255, 0.438);
+}
+.firstShow,
+.secondShow {
+  text-align: right;
+  color: aqua;
+  font-weight: 700;
+}
+.rightThird {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#reset {
+  align-items: center;
+  background-color: aqua;
 }
