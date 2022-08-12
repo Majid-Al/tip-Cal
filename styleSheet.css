@@ -46,12 +46,10 @@ button,
   width: 600px !important;
   margin-top: 0px;
   padding: 20px;
+  padding-inline: 40px !important;
 }
-.row {
-  margin-left: 0px !important;
-}
-.leftBox {
-  padding-left: 0% !important;
+.leftSecond {
+  padding: 0px !important;
 }
 
 .textTitle {
@@ -83,7 +81,7 @@ button {
   height: 35px;
 }
 button:hover {
-  background-color: hsl(185, 41%, 84%);
+  background-color: hsla(185, 78%, 70%, 0.925);
   color: hsl(183, 100%, 15%);
 }
 
@@ -136,15 +134,20 @@ li:nth-child(2) {
 .firstShow,
 .secondShow {
   text-align: right;
-  color: aqua;
+  color: hsl(172, 67%, 45%);
   font-weight: 700;
 }
 .rightThird {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+.before-btn {
+  height: 55px;
 }
 #reset {
+  width: inherit;
   align-items: center;
-  background-color: aqua;
+  background-color: hsla(185, 78%, 70%, 0.925);
+  color: hsl(183, 100%, 15%);
 }
