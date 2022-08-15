@@ -1,15 +1,13 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 * {
   font-family: "Space Mono", monospace;
 }
 body {
   background-color: hsl(185, 41%, 84%) !important;
-}
-.democlass {
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 input {
   font-family: "Space Mono", monospace;
@@ -88,6 +86,41 @@ button {
   background-color: hsl(183, 100%, 15%);
   font-weight: 700;
   border: 0px;
+  height: 35px;
+}
+
+.theSelectedButton {
+  background-color: hsla(185, 78%, 70%, 0.925);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  width: 25% !important;
+  border: 0px;
+  height: 35px;
+}
+.theSelectedButton2 {
+  background-color: hsla(185, 78%, 70%, 0.925);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  margin: 0px !important;
+  width: 25% !important;
+  border: 0px;
+  height: 35px;
+}
+.regulator {
+  color: rgba(255, 255, 255, 0.884);
+  background-color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  border: 0px;
+  width: 25% !important;
+  height: 35px;
+}
+.regulator2 {
+  color: rgba(255, 255, 255, 0.884);
+  background-color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  border: 0px;
+  margin: 0px !important;
+  width: 25% !important;
   height: 35px;
 }
 button:hover {
