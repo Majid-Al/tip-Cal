@@ -2,20 +2,7 @@
 let bill = "",
   tipPersent = "",
   peopleNum = "";
-function tipInputFunc() {
-  tipPersent = document.getElementById("perInput").value;
-  let some = document.getElementsByClassName("theSelectedButton");
-  for (const theSelectedButton of some) {
-    theSelectedButton.classList.remove("theSelectedButton");
-    theSelectedButton.setAttribute("class", "regulator");
-  }
-  let some2 = document.getElementsByClassName("theSelectedButton2");
-  for (const theSelectedButton2 of some2) {
-    theSelectedButton2.classList.remove("theSelectedButton2");
-    theSelectedButton2.setAttribute("class", "regulator2");
-  }
-  calculateFunc();
-}
+
 //----------------------- to take tip percent from buttom and show the selected one
 function setPercent(percent) {
   let some = document.getElementsByClassName("theSelectedButton");
@@ -47,6 +34,20 @@ function setPercent2(percent) {
   event.target.setAttribute("class", "theSelectedButton2");
   document.getElementById("perInput").value = "";
   tipPersent = percent;
+  calculateFunc();
+}
+function tipInputFunc() {
+  tipPersent = document.getElementById("perInput").value;
+  let some = document.getElementsByClassName("theSelectedButton");
+  for (const theSelectedButton of some) {
+    theSelectedButton.classList.remove("theSelectedButton");
+    theSelectedButton.setAttribute("class", "regulator");
+  }
+  let some2 = document.getElementsByClassName("theSelectedButton2");
+  for (const theSelectedButton2 of some2) {
+    theSelectedButton2.classList.remove("theSelectedButton2");
+    theSelectedButton2.setAttribute("class", "regulator2");
+  }
   calculateFunc();
 }
 //-----------------------------------------------------------------RESET BUTTOM
